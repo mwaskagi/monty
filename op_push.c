@@ -12,7 +12,7 @@ void op_push(stack_t **stack, unsigned int line_number)
 {
 	stack_t *new;
 	unsigned int num, i;
-	
+
 	for (i = 0; i < strlen(number); i++)
 	{
 		if (number[i] == '-')
@@ -32,7 +32,7 @@ void op_push(stack_t **stack, unsigned int line_number)
 		exit(EXIT_FAILURE);
 	}
 	new->next = *stack;
-        new->prev = NULL;
+	new->prev = NULL;
 	new->n = num;
 	if (*stack != NULL)
 		(*stack)->prev = new;
