@@ -7,7 +7,6 @@
  * Return: Void.
  */
 
-char *number;
 void op_push(stack_t **stack, unsigned int line_number)
 {
 	stack_t *new;
