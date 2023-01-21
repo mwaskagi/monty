@@ -1,6 +1,5 @@
 #include "monty.h"
 
-
 /**
  * free_stack - free memory in doubly linked list.
  * @stack: doubly linked list representation of a stack (or queue)
@@ -10,7 +9,6 @@
 void free_stack(stack_t **stack)
 {
 	stack_t *tmp;
-
 	if (*stack == NULL)
 		return;
 	while (1)
@@ -26,5 +24,4 @@ void free_stack(stack_t **stack)
 		(*stack)->prev = NULL;
 		free(tmp);
 	}
-
 }
